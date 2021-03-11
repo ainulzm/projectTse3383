@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar >
+    <img class="ion-text-center" src="/assets/logo.PNG">
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="softpink">
+
+ <ion-slides [options]="sliderOptions" pager style="margin-top: 0;">
+   <ion-slide *ngFor="let slide of sliderImage">
+     <img [src]="slide+ '.PNG'" alt="images">
+   </ion-slide>
+ </ion-slides>
+
+ <br>
+ <div class="ion-text-center">
+  <img src="/assets/kat2.PNG" alt="">
+ </div>
+ 
+   
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6">
+
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b1.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/breakfast']" color="purple">
+            Sarapan
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b4.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/lunch']" color="purple">
+            Tengahari
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b3.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/dinner']" color="purple">
+            Malam
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b2.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/dessert']" color="purple">
+            pencuci<br>mulut
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+    
+    <ion-col size="6">
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b5.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/diet']" color="purple">
+            diet
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-card class="ion-text-start" style="border-radius: 15px"> 
+          <img src="/assets/b6.PNG" alt="">
+        
+        <footer>
+          <ion-button expand="block" class="ion-no-margin" [routerLink]="['/kuih']" color="purple">
+            kuih<br>melayu
+          </ion-button>
+        </footer>
+        </ion-card>
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+
+</ion-content>
